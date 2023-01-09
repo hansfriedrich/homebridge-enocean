@@ -6,10 +6,29 @@
     "type": "object",
     "properties": {
       "name": {
-        "title": "Name",
+        "title": "USB-Device",
         "type": "string",
         "required": true,
-        "default": "Example Dynamic Platform"
+        "default": ""
+      },
+      "accessories": {
+        "title": "devices",
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "device-id": {
+              "type": "string",
+              "required": true,
+              "title": "device-id"
+            },
+            "eep":{
+              "type": "string",
+              "requried": true,
+              "title": "eep"
+            }
+          }
+        }
       }
     }
   }
