@@ -1,5 +1,5 @@
 {
-  "pluginAlias": "ExampleHomebridgePlugin",
+  "pluginAlias": "EnoceanSensors",
   "pluginType": "platform",
   "singular": true,
   "schema": {
