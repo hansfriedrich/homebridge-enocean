@@ -1,5 +1,4 @@
 {
-  "private": true,
   "displayName": "Homebridge Enocean Sensors",
   "name": "@hansfriedrich/homebridge-enoceansensor",
   "version": "1.0.0-beta.0",
