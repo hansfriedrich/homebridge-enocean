@@ -31,8 +31,6 @@ export class EnoceanSensorHomebridgePlatform implements DynamicPlatformPlugin {
 
     this.enoceanGateway = new EnoceanGateway(config, this.log);
 
-    this.enoceanGateway.events.on('04:20:F9:F5', telegram => this.log.debug(telegram));
-    this.enoceanGateway.events.on('FE:E0:95:DD', telegram => this.log.debug(telegram));
     /*this.enoceanGateway.onReceivedERP1Telegram((telegram) => {
       this.log.debug('telegram', telegram);
       const sender = telegram.sender;
@@ -95,7 +93,7 @@ export class EnoceanSensorHomebridgePlatform implements DynamicPlatformPlugin {
       // TODO: assert device.id is nott undefined
       const uuid = this.api.hap.uuid.generate(device.id);
       const eepProfileId = device.eep;
-      const name = device.name || '';
+      const name = device.name || device.id;
       const id = device.id;
 
       // see if an accessory with the same uuid has already been registered and restored from
