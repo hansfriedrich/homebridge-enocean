@@ -1,7 +1,7 @@
 {
   "displayName": "Homebridge Enocean Sensors",
   "name": "@hansfriedrich/homebridge-enoceansensor",
-  "version": "1.0.1-beta.0",
+  "version": "1.0.0-beta.1",
   "description": "A Homebridge Plugin to utilize Enocean Sensors.",
   "license": "Apache-2.0",
   "repository": {
